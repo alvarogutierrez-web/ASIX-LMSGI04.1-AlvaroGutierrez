@@ -1,0 +1,43 @@
+<!ELEMENT catalogo (single | album)+>
+
+<!--información-->
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT idioma (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT grupo (#PCDATA)>
+
+<!ELEMENT miembros (miembro+)>
+<!ELEMENT miembro (nombre)>
+<!ELEMENT nombre (#PCDATA)>
+
+<!--single-->      <!--sin símbolo:solo 1 vez / ?: 0 o 1 vez (opcional) / *: 0 o más veces / +: 1 o más veces-->
+<!ELEMENT single (titulo, descripcion?, pais, idioma, genero*, grupo, miembros, duracion)>
+<!ELEMENT duracion (#PCDATA)>
+
+<!ATTLIST single
+    codigo CDATA #REQUIRED
+>
+
+<!--album-->
+<!ELEMENT album (titulo, descripcion?, pais, idioma, genero*, grupo, miembros, numero_canciones, canciones)>
+<!ELEMENT numero_canciones (#PCDATA)>
+
+<!ELEMENT canciones (cancion+)>
+<!ELEMENT cancion (titulo_cancion, duracion_cancion)>
+<!ELEMENT titulo_cancion (#PCDATA)>
+<!ELEMENT duracion_cancion (#PCDATA)>
+
+<!ATTLIST album
+    codigo CDATA #REQUIRED
+>
+
+<!ATTLIST cancion
+    numero CDATA #REQUIRED
+>
+
+<!--atributo sexo-->
+<!ATTLIST miembro
+    sexo (masculino | femenino) #REQUIRED
+>

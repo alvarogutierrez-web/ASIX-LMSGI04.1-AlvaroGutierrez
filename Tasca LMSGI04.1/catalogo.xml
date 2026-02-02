@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "catalogo.dtd">
+
+<catalogo>
+
+    <single codigo="S001">
+        <titulo>Imagine</titulo>
+        <descripcion>Canción icónica por la paz</descripcion>
+        <pais>Reino Unido</pais>
+        <idioma>Inglés</idioma>
+        <genero>Rock and Roll</genero>
+        <grupo>John Lennon</grupo>
+        <miembros>
+            <miembro sexo="masculino">
+                <nombre>John Lennon</nombre>
+            </miembro>
+        </miembros>
+        <duracion>3.1</duracion>
+    </single>
+
+    <album codigo="A001">
+        <titulo>Thriller</titulo>
+        <descripcion>Álbum más vendido de la historia</descripcion>
+        <pais>Estados Unidos</pais>
+        <idioma>Inglés</idioma>
+        <genero>Pop</genero>
+        <genero>Soul</genero>
+        <grupo>Michael Jackson</grupo>
+
+        <miembros>
+            <miembro sexo="masculino">
+                <nombre>Michael Jackson</nombre>
+            </miembro>
+        </miembros>
+
+        <numero_canciones>2</numero_canciones>
+
+        <canciones>
+            <cancion numero="1">
+                <titulo_cancion>Thriller</titulo_cancion>
+                <duracion_cancion>5.57</duracion_cancion>
+            </cancion>
+            <cancion numero="2">
+                <titulo_cancion>Beat It</titulo_cancion>
+                <duracion_cancion>4.18</duracion_cancion>
+            </cancion>
+        </canciones>
+    </album>
+
+</catalogo>
